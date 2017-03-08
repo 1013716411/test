@@ -2,147 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>作品集</title>
-<meta name="keywords" content="" />
-<meta name="description" content="jquery.mixitup" />
-<link type="text/css" rel="stylesheet" href="css/layout.css">
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.min.js"></script>
-<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-<script type="text/javascript">
-$(function(){
-
-	var filterList = {
-
-		init:function(){
-			// MixItUp plugin
-			$('#portfoliolist').mixitup({
-				targetSelector: '.portfolio',
-				filterSelector: '.filter',
-				effects: ['fade'],
-				easing: 'snap',
-				// call the hover effect
-				onMixEnd: filterList.hoverEffect()
-			});				
-
-		},
-		
-		hoverEffect:function(){
-			// Simple parallax effect
-			$('#portfoliolist .portfolio').hover(function(){
-				$(this).find('.label').stop().animate({bottom:0},200,'easeOutQuad');
-				$(this).find('img').stop().animate({top:-30},500,'easeOutQuad');				
-			},function(){
-				$(this).find('.label').stop().animate({bottom:-40},200,'easeInQuad');
-				$(this).find('img').stop().animate({top:0},300,'easeOutQuad');								
-			});				
-		}
-
-	};
-
-	filterList.init();
-	
-});	
-</script>
+	<title>作品集</title>
+	<link rel="stylesheet" type="text/css" href="css/demox.css">
+    <script type="text/javascript" src="js/demox.js"></script>
 </head>
 <body>
-
-<div class="container">
-
-	<ul id="filters" class="clearfix">
-		<li><span class="filter active" data-filter="app card icon logo web">全部</span></li>
-		<li><span class="filter" data-filter="app">响应式</span></li>
-		<li><span class="filter" data-filter="card">移动端</span></li>
-		<li><span class="filter" data-filter="icon">Bootstrap</span></li>
-		<li><span class="filter" data-filter="logo">游戏</span></li>
-		<li><span class="filter" data-filter="web">其他</span></li>
-	</ul>
-	
-	<div id="portfoliolist">
-		<div class="portfolio app" data-cat="logo">
-			<div class="portfolio-wrapper">
-				<a href="https://qdlyh.github.io/hao/demo.html"><img src="img/1.jpg" alt="" /></a>
-				<div class="label">
-					<div class="label-text"><a class="text-title">我的作品</a><span class="text-category">进去看看？</span></div>
-					<div class="label-bg"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="portfolio icon" data-cat="app">
-			<div class="portfolio-wrapper">
-				<img src="img/2.jpg" alt="" />
-				<div class="label">
-					<div class="label-text"><a class="text-title">我的作品</a><span class="text-category">进去看看？</span></div>
-					<div class="label-bg"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="portfolio icon" data-cat="web">
-			<div class="portfolio-wrapper">
-				<img src="img/3.jpg" alt="" />
-				<div class="label">
-					<div class="label-text"><a class="text-title">Bootstrap</a><span class="text-category">进去看看？</span></div>
-					<div class="label-bg"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="portfolio app" data-cat="card">
-			<div class="portfolio-wrapper">
-				<img src="img/4.jpg" alt="" />
-				<div class="label">
-					<div class="label-text"><a class="text-title">Bootstrap</a><span class="text-category">进去看看？</span></div>
-					<div class="label-bg"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="portfolio web" data-cat="app">
-			<div class="portfolio-wrapper">
-				<img src="img/5.jpg" alt="" />
-				<div class="label">
-					<div class="label-text"> <a class="text-title">网易云音乐</a> <span class="text-category">进去看看？</span> </div>
-					<div class="label-bg"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="portfolio card" data-cat="card">
-			<div class="portfolio-wrapper">
-				<img src="img/6.jpg" alt="" />
-				<div class="label">
-					<div class="label-text"> <a class="text-title">手机新闻</a> <span class="text-category">想看新闻吗？</span> </div>
-					<div class="label-bg"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="portfolio logo" data-cat="card">
-			<div class="portfolio-wrapper">
-				<a href="https://qdlyh.github.io/2048/2048.html"><img src="img/2048.jpg" alt="" /></a>
-				<div class="label">
-					<div class="label-text"> <a class="text-title">2048</a> <span class="text-category">来玩一下？</span> </div>
-					<div class="label-bg"></div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="portfolio web" data-cat="logo">
-			<div class="portfolio-wrapper">
-				<a href="https://qdlyh.github.io/"><img src="img/7.jpg" alt="" /></a>
-				<div class="label">
-					<div class="label-text"> <a class="text-title">我的个人博客</a> <span class="text-category">进去看看？</span> </div>
-					<div class="label-bg"></div>
-				</div>
-			</div>
-		</div>
-					
+<div class="home">
+		<h1>作品集</h1>
+		<canvas></canvas>
+	<div class="box">
+	    <a href="https://qdlyh.github.io/hao/demo.html"><img class="img6" src="img/1.jpg" alt=""></a>
+		<a href="https://qdlyh.github.io/yu/demo.html"><img class="img1" src="img/2.jpg" alt=""></a>
+		<a href="https://qdlyh.github.io/cj/demo.html"><img class="img2" src="img/3.jpg" alt=""></a>
+		<a href="https://qdlyh.github.io/new-test/demo.html"><img class="img5" src="img/4.jpg" alt=""></a>
+		<a href="https://qdlyh.github.io/word/demo.html"><img class="img4" src="img/5.jpg" alt=""></a>
+	    <a href="javascript:;"><img class="img3" src="img/6.jpg" alt=""></a>
 	</div>
-	
+		<div class="footer">
+	    <div class="footer-box">
+		     <h2>联系方式</h2><br/>
+		     <h3>电话: 13030217219</h3><br/>
+		     <h3>邮箱: liang620523@163.com</h3><br/>	 		
+	    </div>	 
+	</div>
 </div>
 </body>
 </html>
