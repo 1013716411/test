@@ -4,12 +4,13 @@ body{font-family:Helvetica, Arial, Verdana;background:#efefef url('../img/ticks.
 	position:relative;
 	width:960px;
 	margin:0 auto;
-	top: 100px;
+	top: 150px;
 	-webkit-transition:all 1s ease;
 	-moz-transition:all 1s ease;
 	-o-transition:all 1s ease;
 	transition:all 1s ease;	
 }
+
 img{
 	width: 250px;
 	height: 200px;
@@ -21,6 +22,7 @@ img{
 }
 #filters li{
 	float:left;
+	font-size: 25px;
 }
 #filters li span{
 	display:block;
@@ -31,6 +33,9 @@ img{
 #filters li span.active{
 	background:#e95a44;
 	color:#ffffff;
+}
+#portfoliolist{
+	margin-top: 50px;
 }
 #portfoliolist .portfolio{
 	-webkit-box-sizing:border-box;
